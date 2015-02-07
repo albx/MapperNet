@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MapperNet.WebDemo.Models.SqlServer.Person>
+
+@{
+    ViewBag.Title = "People";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>People</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreatePerson")
+</p>
+
+@if (Model.Count() <= 0)
+{
+    <div class="row">
+        <div class="alert alert-warning">No people found!</div>
+    </div>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditPerson", new { id=item.Id }) |
+            @Html.ActionLink("Details", "PersonDetails", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "DeletePerson", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

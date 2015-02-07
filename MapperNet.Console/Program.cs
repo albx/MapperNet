@@ -67,7 +67,7 @@ namespace MapperNet.ConsoleApp
 
                 var personMapper = new PersonMapper();
 
-                AddPeople();
+                //AddPeople();
 
                 var people = personMapper.Query();
                 foreach (var person in people)
@@ -79,7 +79,7 @@ namespace MapperNet.ConsoleApp
 
                 var carMapper = new CarMapper();
 
-                AddCars();
+                //AddCars();
 
                 foreach (var car in carMapper.Query())
                 {

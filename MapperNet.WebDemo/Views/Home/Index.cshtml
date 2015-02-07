@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to MapperNet Web Demo</h1>
+    <p class="lead">This is a simple Web application that shows how MapperNet Works.</p>
+    <p>MapperNet is a simple ORM written in C#. If you want to know more <a href="https://github.com/albx/MapperNet" target="_blank" class="btn btn-primary btn-lg">Download it from Github</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="@Url.Action("Index", "SqlServer")">
+            <h2>SQL Server</h2>
+            <p>
+                Here you can test MapperNet on a SqlServer Database.<br />
+                Please check the Web.config to set the correct connection string to your database. 
+            </p>
+        </a>
+    </div>
+</div>

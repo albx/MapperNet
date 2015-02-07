@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MapperNet">
+    <Reference Include="MapperNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\MapperNet\bin\Debug\MapperNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />

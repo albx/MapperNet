@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapperNet", "MapperNet\Mapp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapperNet.ConsoleApp", "MapperNet.Console\MapperNet.ConsoleApp.csproj", "{B40C917C-9272-4521-8D47-70F880D85E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapperNet.WebDemo", "MapperNet.WebDemo\MapperNet.WebDemo.csproj", "{E03BFCE0-FB26-4539-AAFC-E5F800E88186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B40C917C-9272-4521-8D47-70F880D85E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B40C917C-9272-4521-8D47-70F880D85E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B40C917C-9272-4521-8D47-70F880D85E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03BFCE0-FB26-4539-AAFC-E5F800E88186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03BFCE0-FB26-4539-AAFC-E5F800E88186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03BFCE0-FB26-4539-AAFC-E5F800E88186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03BFCE0-FB26-4539-AAFC-E5F800E88186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
