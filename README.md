@@ -108,7 +108,7 @@ To update or delete an entity you have to call the Update and the Delete method.
 ```
 var personMapper = new PersonMapper();
 
-var person = personMapper.Query.Where(p => p.Id == 1).FirstOrDefault();
+var person = personMapper.Query().Where(p => p.Id == 1).FirstOrDefault();
 
 // Update the person's first name
 person.FirstName = "Your new first name";
