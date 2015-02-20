@@ -2,6 +2,8 @@
 MapperNet is a simple and little ORM written in C#. It Requires **.NET Framework 4.5.1**.<br/>
 Up to now it has been tested with **SQL Server 2014**.
 
+Nuget package is available here: https://www.nuget.org/packages/MapperNet/
+
 MapperNet is based on the Data Mapper desing Pattern (see http://martinfowler.com/eaaCatalog/dataMapper.html).
 
 The library files are placed in the MapperNet folder.
