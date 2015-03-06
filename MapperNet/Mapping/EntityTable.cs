@@ -186,7 +186,9 @@ namespace MapperNet.Mapping
             using (var conn = this.Connection.Connection)
             {
                 var sql = this.PrepareSqlDelete();
-                var parameters = this.BuildParameters(new Dictionary<string, object>() { { this.PrimaryKeyName, (typeof(TModel)).GetProperty(this.PrimaryKeyName).GetValue(model) } }, true);
+
+                var primaryKeyValue = model.GetType().GetProperty(FieldMapping.Where(f => f.Key == this.PrimaryKeyName).FirstOrDefault().Value).GetValue(model);
+                var parameters = this.BuildParameters(new Dictionary<string, object>() { { this.PrimaryKeyName, primaryKeyValue } }, true);
 
                 var command = this.Connection.Command;
                 command.CommandText = sql;
