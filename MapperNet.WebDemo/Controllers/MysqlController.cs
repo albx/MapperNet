@@ -75,7 +75,7 @@ namespace MapperNet.WebDemo.Controllers
 
         public ActionResult EditPerson(int id)
         {
-            var person = PersonMapper.Query(string.Format("SELECT * FROM {0} WHERE id=@personId", PersonMapper.TableName), new Dictionary<string, object>()
+            var person = PersonMapper.Query(string.Format("SELECT * FROM {0} WHERE person_id=@personId", PersonMapper.TableName), new Dictionary<string, object>()
             {
                 { "personId", id }
             }).FirstOrDefault();
@@ -114,7 +114,7 @@ namespace MapperNet.WebDemo.Controllers
 
         public ActionResult DeletePerson(int id)
         {
-            var person = PersonMapper.Query(string.Format("SELECT * FROM {0} WHERE id=@personId", PersonMapper.TableName), new Dictionary<string, object>()
+            var person = PersonMapper.Query(string.Format("SELECT * FROM {0} WHERE person_id=@personId", PersonMapper.TableName), new Dictionary<string, object>()
             {
                 { "personId", id }
             }).FirstOrDefault();

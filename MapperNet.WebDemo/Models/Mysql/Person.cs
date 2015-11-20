@@ -10,7 +10,7 @@ namespace MapperNet.WebDemo.Models.Mysql
     [Table(Name="people")]
     public class Person
     {
-        [Column(Name="id", IsPrimaryKey=true)]
+        [Column(Name="person_id", IsPrimaryKey=true)]
         public int Id { get; set; }
 
         [Column(Name="first_name")]
