@@ -1,6 +1,7 @@
 # MapperNet
 MapperNet is a simple and little ORM written in C#. It Requires **.NET Framework 4.5.1**.<br/>
-Up to now it has been tested with **SQL Server 2014**.
+Up to now it has been tested with **SQL Server 2014** and **MySQL 5.6**.<br/>
+To make it work with MySQL, please install the MySQL Connector (version 6.8.3 or above) and the necessary packages using NuGET (Mysql.Data, and if you're on a MVC Web Application Mysql.Web).
 
 Nuget package is available here: https://www.nuget.org/packages/MapperNet/
 
