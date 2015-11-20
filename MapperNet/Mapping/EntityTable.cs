@@ -336,7 +336,7 @@ namespace MapperNet.Mapping
         protected string PrepareSqlDelete()
         {
             var primaryKeyMap = this.FieldMapping.Where(f => f.Key == this.PrimaryKeyName).First();
-            string condition = string.Format("@{0}={1}", primaryKeyMap.Key, primaryKeyMap.Value);
+            string condition = string.Format("{0}=@{1}", primaryKeyMap.Key, primaryKeyMap.Value);
 
             return string.Format("DELETE FROM {0} WHERE {1}", this.TableName, condition);
         }
